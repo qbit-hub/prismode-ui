@@ -8,7 +8,7 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "bun run --filter @qbit-hub/prismode-ui build && bun run --filter @prismode/playground build",
+    "build": "bun run --filter @qbit/prismode-ui build && bun run --filter @prismode/playground build",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test",

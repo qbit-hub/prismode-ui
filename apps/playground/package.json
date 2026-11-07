@@ -12,7 +12,7 @@
     "@mui/material": "^9.0.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@qbit-hub/prismode-ui": "workspace:*",
+    "@qbit/prismode-ui": "workspace:*",
     "@emotion/cache": "^11.14.0",
     "@mui/stylis-plugin-rtl": "^7.3.0",
     "stylis": "^4.3.6"

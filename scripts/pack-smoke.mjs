@@ -114,7 +114,7 @@ try {
       process.platform === "win32" ? "junction" : "dir",
     );
   }
-  assert(!existsSync(join(temp, "node_modules/@qbit-hub/prismode-ui")));
+  assert(!existsSync(join(temp, "node_modules/@qbit/prismode-ui")));
   const entry = resolve(extracted, manifest.exports["."].import);
   assert(
     realpathSync(entry).startsWith(realpathSync(temp)),
@@ -150,15 +150,15 @@ try {
       hash,
     );
   }
-  mkdirSync(join(temp, "node_modules/@qbit-hub"), { recursive: true });
+  mkdirSync(join(temp, "node_modules/@qbit"), { recursive: true });
   symlinkSync(
     extracted,
-    join(temp, "node_modules/@qbit-hub/prismode-ui"),
+    join(temp, "node_modules/@qbit/prismode-ui"),
     process.platform === "win32" ? "junction" : "dir",
   );
   writeFileSync(
     join(temp, "consumer.mts"),
-    `import {createPrismodeTheme, PrismodeProvider, type PrismodeProviderProps} from "@qbit-hub/prismode-ui"; import {createMD3Theme, NavigationRail, type MD3ThemeOptions} from "@qbit-hub/prismode-ui/md3-next"; const options: MD3ThemeOptions = {seed: "#6750A4"}; const props: PrismodeProviderProps = {children: null, transformTheme: theme => theme}; createPrismodeTheme(); createMD3Theme(options); void PrismodeProvider; void NavigationRail; void props;`,
+    `import {createPrismodeTheme, PrismodeProvider, type PrismodeProviderProps} from "@qbit/prismode-ui"; import {createMD3Theme, NavigationRail, type MD3ThemeOptions} from "@qbit/prismode-ui/md3-next"; const options: MD3ThemeOptions = {seed: "#6750A4"}; const props: PrismodeProviderProps = {children: null, transformTheme: theme => theme}; createPrismodeTheme(); createMD3Theme(options); void PrismodeProvider; void NavigationRail; void props;`,
   );
   run(
     "node",

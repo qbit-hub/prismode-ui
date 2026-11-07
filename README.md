@@ -7,12 +7,11 @@ Apple, Google and md3-next. MIT; see [NOTICE.md](NOTICE.md) for provenance.
 ## Install
 
 ```sh
-npm install @qbit-hub/prismode-ui react@^19 react-dom@^19 @mui/material@^9 @emotion/react@^11.14 @emotion/styled@^11.14
+npm install @qbit/prismode-ui react@^19 react-dom@^19 @mui/material@^9 @emotion/react@^11.14 @emotion/styled@^11.14
 ```
 
-This repository prepares version 0.1.0; registry availability depends on a separate
-release. For local evaluation, build and install the tarball from `npm pack` in
-`packages/prismode-ui`:
+The npm registry publication is separate from the GitHub Release. Until it is available,
+install the packed release artifact or create a local tarball:
 
 ```sh
 bun install --frozen-lockfile
@@ -20,23 +19,18 @@ bun run build
 cd packages/prismode-ui
 npm pack --ignore-scripts
 # In the consumer, install the copied artifact alongside the peer dependencies above:
-npm install ./qbit-hub-prismode-ui-0.1.0.tgz
+npm install ./qbit-prismode-ui-0.1.0.tgz
 ```
 
 The repository root is the private `prismode-workspace` Bun workspace, not the
 public library package. A direct GitHub dependency on this repository is not a
 verified installation path. For distribution, publish the packed library to a
-registry or attach that tarball to a future GitHub Release, then install the
-registry version or release artifact URL. No release has been published by this
-correction; consumer manifests should not use machine-specific absolute paths.
+registry or distribute it as a GitHub Release asset. Consumer manifests should
+use a published registry version or release artifact URL, never absolute local paths.
 
 ```tsx
 import { Button } from "@mui/material";
-import {
-  PrismodeProvider,
-  GlassSurface,
-  usePrismode,
-} from "@qbit-hub/prismode-ui";
+import { PrismodeProvider, GlassSurface, usePrismode } from "@qbit/prismode-ui";
 
 function Controls() {
   const { setDesignSystem, setMode, setSeed } = usePrismode();
@@ -86,7 +80,7 @@ md3-next@0.1.3, vendored in `src/vendor/md3-next` in the library. The SHA256SUMS
 manifest and portable hash test protect their original bytes. `createMD3Theme`,
 `MD3Provider`, `useMD3`, `md3Typography`, `md3ComponentOverrides`, `NavigationRail`,
 `SegmentedButton`, and `SearchBar` are also available through
-`@qbit-hub/prismode-ui/md3-next`, with their upstream public types. Liquid Glass
+`@qbit/prismode-ui/md3-next`, with their upstream public types. Liquid Glass
 is separate original Prismode styling; GlassSurface works with either system.
 
 Switching preserves mounted component state. The library has no direction option,
