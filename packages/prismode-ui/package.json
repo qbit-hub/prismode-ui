@@ -1,6 +1,6 @@
 {
-  "name": "@qbit/prismode-ui",
-  "version": "0.1.0",
+  "name": "@qbit.click/prismode-ui",
+  "version": "0.1.1",
   "private": false,
   "description": "Selectable Material 3 and original Liquid Glass themes for React and MUI",
   "license": "MIT",
