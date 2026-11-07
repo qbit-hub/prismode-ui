@@ -1,0 +1,9 @@
+node_modules
+dist
+bun.lock
+.ai-bridge
+playwright-report
+test-results
+coverage
+
+packages/prismode-ui/src/vendor/md3-next/

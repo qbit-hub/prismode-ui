@@ -1,0 +1,40 @@
+{
+  "name": "prismode-workspace",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.4.4",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "bun run --filter @qbit-hub/prismode-ui build && bun run --filter @prismode/playground build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "dev": "bun run --filter @prismode/playground dev",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "smoke": "bun scripts/pack-smoke.mjs"
+  },
+  "devDependencies": {
+    "@mui/material": "9.5.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/node": "^24.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "^5.9.0",
+    "tsup": "^8.5.0",
+    "vite": "^7.0.0",
+    "vitest": "^3.2.0",
+    "jsdom": "^26.0.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.0",
+    "@testing-library/jest-dom": "^6.6.0",
+    "@playwright/test": "^1.56.0",
+    "prettier": "^3.6.0"
+  }
+}

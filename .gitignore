@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.ai-bridge/
+playwright-report/
+test-results/
+coverage/
+*.tgz

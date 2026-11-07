@@ -1,0 +1,23 @@
+{
+  "name": "@prismode/playground",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@mui/material": "^9.0.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@qbit-hub/prismode-ui": "workspace:*",
+    "@emotion/cache": "^11.14.0",
+    "@mui/stylis-plugin-rtl": "^7.3.0",
+    "stylis": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/stylis": "^4.2.0"
+  }
+}

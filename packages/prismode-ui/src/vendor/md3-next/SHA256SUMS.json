@@ -1,0 +1,15 @@
+{
+  "package": "md3-next",
+  "version": "0.1.3",
+  "algorithm": "sha256",
+  "files": {
+    "color.ts": "6b62789400271087aed5cc0bfb333fe80d45ef0d17e62a97d4519e577cfb79d1",
+    "typography.ts": "1fed7fbe9d8b319678725ff8dd4f0395cc3a45afecd7db92e0e87fbf685badaf",
+    "components.ts": "a7d9391e40aee7239a2cdaead4bc93f530a9100bec60b844d495fdc51b939c7e",
+    "theme.ts": "6145221ca40a355105a72578680cd5afacf4673b8f77917fa83cdcdbdf91e573",
+    "provider.tsx": "644805a1eb62fb3b4c9e4304ccbaa834688d4641ee880f67dab34a0a73e9fff2",
+    "NavigationRail.tsx": "6ab877033f0d342f0a2d5542023e74faf506c792c6e2468a9b31edadd6ffbcb4",
+    "SegmentedButton.tsx": "ea0e09c5981ca935c149fd691e224a36677e36c0bcf9caa6c51512e1809bc40e",
+    "SearchBar.tsx": "d95ae0090065087fd749e449734e22450811383d718e11a42b9fc1ec29921f42"
+  }
+}
