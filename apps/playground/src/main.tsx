@@ -36,7 +36,7 @@ import {
   usePrismode,
   type ColorMode,
   type DesignSystem,
-} from "@qbit-hub/prismode-ui";
+} from "@qbit/prismode-ui";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 import rtlPlugin from "@mui/stylis-plugin-rtl";
