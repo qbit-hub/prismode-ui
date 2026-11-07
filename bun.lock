@@ -33,7 +33,7 @@
         "@emotion/styled": "^11.14.0",
         "@mui/material": "^9.0.0",
         "@mui/stylis-plugin-rtl": "^7.3.0",
-        "@qbit/prismode-ui": "workspace:*",
+        "@qbit.click/prismode-ui": "workspace:*",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "stylis": "^4.3.6",
@@ -43,8 +43,8 @@
       },
     },
     "packages/prismode-ui": {
-      "name": "@qbit/prismode-ui",
-      "version": "0.1.0",
+      "name": "@qbit.click/prismode-ui",
+      "version": "0.1.1",
       "dependencies": {
         "@material/material-color-utilities": "^0.3.0",
       },
@@ -204,7 +204,7 @@
 
     "@prismode/playground": ["@prismode/playground@workspace:apps/playground"],
 
-    "@qbit/prismode-ui": ["@qbit/prismode-ui@workspace:packages/prismode-ui"],
+    "@qbit.click/prismode-ui": ["@qbit.click/prismode-ui@workspace:packages/prismode-ui"],
 
     "@rollup/rollup-android-arm-eabi": ["@rollup/rollup-android-arm-eabi@4.68.0", "", { "os": "android", "cpu": "arm" }, "sha512-Ta2n0ntLfzP0LqwwcXOIh2z0mnHjlxMS+h4Y9lo+w33Quyf9KFKEi9QZ2IKqeEBKr0qxNpXc/DQjz5KVIs8AEA=="],
 

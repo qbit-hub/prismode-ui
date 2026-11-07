@@ -1,7 +1,7 @@
 # Contributing
 
 Use Bun 1.4.4 and the committed lockfile. Run `bun install --frozen-lockfile`, then
-`bun run --filter @qbit/prismode-ui build` (refresh declarations before typecheck),
+`bun run --filter @qbit.click/prismode-ui build` (refresh declarations before typecheck),
 `bun run build` and `bun run dev`. Make focused changes with behavior tests for
 regressions. Preserve third-party notices when adapting code.
 
